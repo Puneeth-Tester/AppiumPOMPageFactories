@@ -1,0 +1,583 @@
+2020-10-21 21:38:05:897 [Appium] Welcome to Appium v1.18.3
+2020-10-21 21:38:05:899 [Appium] Non-default server args:
+2020-10-21 21:38:05:901 [Appium]   logFile: D:\Study\Appium\Secondary\appium-workspace\PageObjectModelwithPageFactories\src\test\resources\logs\log.txt
+2020-10-21 21:38:05:901 [Appium]   localTimezone: true
+2020-10-21 21:38:05:951 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2020-10-21 21:38:06:020 [HTTP] --> GET /wd/hub/status
+2020-10-21 21:38:06:021 [HTTP] {}
+2020-10-21 21:38:06:027 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2020-10-21 21:38:06:030 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.18.3"}}
+2020-10-21 21:38:06:046 [HTTP] <-- GET /wd/hub/status 200 20 ms - 68
+2020-10-21 21:38:06:047 [HTTP] 
+2020-10-21 21:38:06:114 [HTTP] --> POST /wd/hub/session
+2020-10-21 21:38:06:115 [HTTP] {"desiredCapabilities":{"appActivity":"flipboard.activities.LaunchActivityAlias","appPackage":"flipboard.app","platformName":"android","deviceName":"android","platformVersion":"9 PKQ1.190616.001"},"capabilities":{"firstMatch":[{"appium:appActivity":"flipboard.activities.LaunchActivityAlias","appium:appPackage":"flipboard.app","appium:deviceName":"android","platformName":"android","appium:platformVersion":"9 PKQ1.190616.001"}]}}
+2020-10-21 21:38:06:118 [W3C] Calling AppiumDriver.createSession() with args: [{"appActivity":"flipboard.activities.LaunchActivityAlias","appPackage":"flipboard.app","platformName":"android","deviceName":"android","platformVersion":"9 PKQ1.190616.001"},null,{"firstMatch":[{"appium:appActivity":"flipboard.activities.LaunchActivityAlias","appium:appPackage":"flipboard.app","appium:deviceName":"android","platformName":"android","appium:platformVersion":"9 PKQ1.190616.001"}]}]
+2020-10-21 21:38:06:121 [BaseDriver] Event 'newSessionRequested' logged at 1603296486120 (21:38:06 GMT+0530 (India Standard Time))
+2020-10-21 21:38:06:143 [Appium] 
+2020-10-21 21:38:06:144 [Appium] ======================================================================
+2020-10-21 21:38:06:145 [Appium]   DEPRECATION WARNING:
+2020-10-21 21:38:06:145 [Appium] 
+2020-10-21 21:38:06:146 [Appium]   The 'automationName' capability was not provided in the desired 
+2020-10-21 21:38:06:146 [Appium]   capabilities for this Android session
+2020-10-21 21:38:06:147 [Appium] 
+2020-10-21 21:38:06:147 [Appium]   Setting 'automationName=UiAutomator2' by default and using the 
+2020-10-21 21:38:06:148 [Appium]   UiAutomator2 Driver
+2020-10-21 21:38:06:148 [Appium] 
+2020-10-21 21:38:06:149 [Appium]   The next major version of Appium (2.x) will **require** the 
+2020-10-21 21:38:06:149 [Appium]   'automationName' capability to be set for all sessions on all 
+2020-10-21 21:38:06:150 [Appium]   platforms
+2020-10-21 21:38:06:151 [Appium] 
+2020-10-21 21:38:06:151 [Appium]   In previous versions (Appium <= 1.13.x), the default was 
+2020-10-21 21:38:06:152 [Appium]   'automationName=UiAutomator1'
+2020-10-21 21:38:06:154 [Appium] 
+2020-10-21 21:38:06:155 [Appium]   If you wish to use that automation instead of UiAutomator2, please 
+2020-10-21 21:38:06:157 [Appium]   add 'automationName=UiAutomator1' to your desired capabilities
+2020-10-21 21:38:06:158 [Appium] 
+2020-10-21 21:38:06:159 [Appium]   For more information about drivers, please visit 
+2020-10-21 21:38:06:160 [Appium]   http://appium.io/docs/en/about-appium/intro/ and explore the 
+2020-10-21 21:38:06:161 [Appium]   'Drivers' menu
+2020-10-21 21:38:06:162 [Appium] 
+2020-10-21 21:38:06:162 [Appium] ======================================================================
+2020-10-21 21:38:06:163 [Appium] 
+2020-10-21 21:38:06:908 [Appium] Appium v1.18.3 creating new AndroidUiautomator2Driver (v1.56.1) session
+2020-10-21 21:38:06:912 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2020-10-21 21:38:06:913 [BaseDriver] Creating session with W3C capabilities: {
+2020-10-21 21:38:06:913 [BaseDriver]   "alwaysMatch": {
+2020-10-21 21:38:06:914 [BaseDriver]     "platformName": "android",
+2020-10-21 21:38:06:914 [BaseDriver]     "appium:appActivity": "flipboard.activities.LaunchActivityAlias",
+2020-10-21 21:38:06:914 [BaseDriver]     "appium:appPackage": "flipboard.app",
+2020-10-21 21:38:06:915 [BaseDriver]     "appium:deviceName": "android",
+2020-10-21 21:38:06:915 [BaseDriver]     "appium:platformVersion": "9 PKQ1.190616.001"
+2020-10-21 21:38:06:915 [BaseDriver]   },
+2020-10-21 21:38:06:915 [BaseDriver]   "firstMatch": [
+2020-10-21 21:38:06:916 [BaseDriver]     {}
+2020-10-21 21:38:06:916 [BaseDriver]   ]
+2020-10-21 21:38:06:916 [BaseDriver] }
+2020-10-21 21:38:06:931 [BaseDriver] Session created with session id: af268646-f87d-49bc-a20c-fa0164c7c024
+2020-10-21 21:38:06:932 [UiAutomator2] Starting 'flipboard.app' directly on the device
+2020-10-21 21:38:06:958 [ADB] Found 1 'build-tools' folders under 'C:\Users\91967\AppData\Local\Android\Sdk' (newest first):
+2020-10-21 21:38:06:961 [ADB]     C:/Users/91967/AppData/Local/Android/Sdk/build-tools/30.0.2
+2020-10-21 21:38:06:962 [ADB] Using 'adb.exe' from 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2020-10-21 21:38:06:965 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2020-10-21 21:38:07:044 [AndroidDriver] Retrieving device list
+2020-10-21 21:38:07:045 [ADB] Trying to find a connected android device
+2020-10-21 21:38:07:047 [ADB] Getting connected devices
+2020-10-21 21:38:07:247 [ADB] Connected devices: [{"udid":"17617090","state":"device"}]
+2020-10-21 21:38:07:248 [AndroidDriver] Looking for a device with Android '9.0.0'
+2020-10-21 21:38:07:249 [ADB] Setting device id to 17617090
+2020-10-21 21:38:07:250 [ADB] Getting device platform version
+2020-10-21 21:38:07:252 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell getprop ro.build.version.release'
+2020-10-21 21:38:07:457 [ADB] Current device property 'ro.build.version.release': 9
+2020-10-21 21:38:07:459 [AndroidDriver] Using device: 17617090
+2020-10-21 21:38:07:463 [ADB] Using 'adb.exe' from 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2020-10-21 21:38:07:464 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2020-10-21 21:38:07:546 [ADB] Setting device id to 17617090
+2020-10-21 21:38:07:547 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell getprop ro.build.version.sdk'
+2020-10-21 21:38:07:689 [ADB] Current device property 'ro.build.version.sdk': 28
+2020-10-21 21:38:07:691 [ADB] Getting device platform version
+2020-10-21 21:38:07:692 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell getprop ro.build.version.release'
+2020-10-21 21:38:07:829 [ADB] Current device property 'ro.build.version.release': 9
+2020-10-21 21:38:07:830 [ADB] Device API level: 28
+2020-10-21 21:38:07:830 [UiAutomator2] Relaxing hidden api policy
+2020-10-21 21:38:07:831 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2020-10-21 21:38:08:185 [AndroidDriver] No app sent in, not parsing package/activity
+2020-10-21 21:38:08:187 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 wait-for-device'
+2020-10-21 21:38:08:282 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell echo ping'
+2020-10-21 21:38:08:453 [AndroidDriver] Pushing settings apk to device...
+2020-10-21 21:38:08:456 [ADB] Getting install status for io.appium.settings
+2020-10-21 21:38:08:457 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell dumpsys package io.appium.settings'
+2020-10-21 21:38:08:597 [ADB] 'io.appium.settings' is installed
+2020-10-21 21:38:08:598 [ADB] Getting package info for 'io.appium.settings'
+2020-10-21 21:38:08:598 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell dumpsys package io.appium.settings'
+2020-10-21 21:38:08:828 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('3.2.0' >= '3.2.0')
+2020-10-21 21:38:08:829 [ADB] There is no need to install/upgrade 'C:\Users\91967\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+2020-10-21 21:38:08:831 [ADB] Getting IDs of all 'io.appium.settings' processes
+2020-10-21 21:38:08:832 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell 'pgrep --help; echo $?''
+2020-10-21 21:38:08:990 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell pgrep -f io\\.appium\\.settings'
+2020-10-21 21:38:09:172 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2020-10-21 21:38:09:174 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell appops set io.appium.settings android\:mock_location allow'
+2020-10-21 21:38:09:334 [Logcat] Starting logs capture with command: C:\\Users\\91967\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 17617090 logcat -v threadtime
+2020-10-21 21:38:09:863 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to 8200
+2020-10-21 21:38:09:863 [ADB] Forwarding system: 8200 to device: 6790
+2020-10-21 21:38:09:864 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 forward tcp\:8200 tcp\:6790'
+2020-10-21 21:38:09:978 [ADB] Getting install status for io.appium.uiautomator2.server
+2020-10-21 21:38:09:979 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell dumpsys package io.appium.uiautomator2.server'
+2020-10-21 21:38:10:129 [ADB] 'io.appium.uiautomator2.server' is installed
+2020-10-21 21:38:10:130 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2020-10-21 21:38:10:130 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell dumpsys package io.appium.uiautomator2.server'
+2020-10-21 21:38:10:315 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('4.12.2' >= '4.12.2')
+2020-10-21 21:38:10:316 [UiAutomator2] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2020-10-21 21:38:10:317 [ADB] Checking app cert for C:\Users\91967\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.12.2.apk
+2020-10-21 21:38:10:348 [ADB] Using 'apksigner.jar' from 'C:\Users\91967\AppData\Local\Android\Sdk\build-tools\30.0.2\lib\apksigner.jar'
+2020-10-21 21:38:10:354 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk1.8.0_261\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\91967\\AppData\\Local\\Android\\Sdk\\build-tools\\30.0.2\\lib\\apksigner.jar verify --print-certs C:\\Users\\91967\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.12.2.apk
+2020-10-21 21:38:11:476 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2020-10-21 21:38:11:477 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2020-10-21 21:38:11:478 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2020-10-21 21:38:11:478 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2020-10-21 21:38:11:479 [ADB] 
+2020-10-21 21:38:11:479 [ADB] 'C:\Users\91967\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.12.2.apk' is signed with the default certificate
+2020-10-21 21:38:11:480 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2020-10-21 21:38:11:480 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell dumpsys package io.appium.uiautomator2.server.test'
+2020-10-21 21:38:11:601 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2020-10-21 21:38:11:601 [ADB] Checking app cert for C:\Users\91967\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+2020-10-21 21:38:11:603 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk1.8.0_261\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\91967\\AppData\\Local\\Android\\Sdk\\build-tools\\30.0.2\\lib\\apksigner.jar verify --print-certs C:\\Users\\91967\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk
+2020-10-21 21:38:12:596 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2020-10-21 21:38:12:597 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2020-10-21 21:38:12:597 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2020-10-21 21:38:12:597 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2020-10-21 21:38:12:597 [ADB] 
+2020-10-21 21:38:12:597 [ADB] 'C:\Users\91967\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+2020-10-21 21:38:12:598 [UiAutomator2] Server packages are not going to be (re)installed
+2020-10-21 21:38:12:602 [UiAutomator2] Waiting up to 30000ms for services to be available
+2020-10-21 21:38:12:603 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell pm list instrumentation'
+2020-10-21 21:38:12:729 [UiAutomator2] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2020-10-21 21:38:12:730 [UiAutomator2] No app capability. Assuming it is already on the device
+2020-10-21 21:38:12:730 [ADB] Getting install status for flipboard.app
+2020-10-21 21:38:12:731 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell dumpsys package flipboard.app'
+2020-10-21 21:38:12:887 [ADB] 'flipboard.app' is installed
+2020-10-21 21:38:12:888 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell am force-stop flipboard.app'
+2020-10-21 21:38:13:114 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell pm clear flipboard.app'
+2020-10-21 21:38:13:808 [AndroidDriver] Performed fast reset on the installed 'flipboard.app' application (stop and clear)
+2020-10-21 21:38:13:809 [UiAutomator2] Performing shallow cleanup of automation leftovers
+2020-10-21 21:38:13:826 [UiAutomator2] No obsolete sessions have been detected (socket hang up)
+2020-10-21 21:38:13:827 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell am force-stop io.appium.uiautomator2.server.test'
+2020-10-21 21:38:13:981 [UiAutomator2] Starting UIAutomator2 server 4.12.2
+2020-10-21 21:38:13:982 [UiAutomator2] Using UIAutomator2 server from 'C:\Users\91967\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.12.2.apk' and test from 'C:\Users\91967\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+2020-10-21 21:38:13:982 [UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
+2020-10-21 21:38:13:983 [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","17617090","shell","am","instrument","-w","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2020-10-21 21:38:15:002 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-10-21 21:38:15:008 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-10-21 21:38:15:027 [WD Proxy] socket hang up
+2020-10-21 21:38:15:684 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2020-10-21 21:38:16:037 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-10-21 21:38:16:038 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-10-21 21:38:16:053 [WD Proxy] socket hang up
+2020-10-21 21:38:17:059 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-10-21 21:38:17:059 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-10-21 21:38:17:211 [WD Proxy] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+2020-10-21 21:38:17:212 [UiAutomator2] The initialization of the instrumentation process took 3230ms
+2020-10-21 21:38:17:213 [WD Proxy] Matched '/session' to command name 'createSession'
+2020-10-21 21:38:17:213 [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8200/wd/hub/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","appActivity":"flipboard.activities.LaunchActivityAlias","appPackage":"flipboard.app","deviceName":"android","platformVersion":"9 PKQ1.190616.001"},"platformName":"android","appActivity":"flipboard.activities.LaunchActivityAlias","appPackage":"flipboard.app","deviceName":"17617090","platformVersion":"9 PKQ1.190616.001","deviceUDID":"17617090"}],"alwaysMatch":{}}}
+2020-10-21 21:38:17:265 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","appActivity":"flipboard.activities.LaunchActivityAlias","appPackage":"flipboard.app","deviceName":"android","platformVersion":"9 PKQ1.190616.001"},"platformName":"android","appActivity":"flipboard.activities.LaunchActivityAlias","appPackage":"flipboard.app","deviceName":"17617090","platformVersion":"9 PKQ1.190616.001","deviceUDID":"17617090"}],"alwaysMatch":{}},"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa"}}
+2020-10-21 21:38:17:266 [WD Proxy] Determined the downstream protocol as 'W3C'
+2020-10-21 21:38:17:282 [WD Proxy] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/appium/device/info] with no body
+2020-10-21 21:38:17:354 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":{"androidId":"8922339b020b915d","apiVersion":"28","bluetooth":{"state":"OFF"},"brand":"xiaomi","carrierName":"IND airtel","displayDensity":440,"locale":"en_IN","manufacturer":"Xiaomi","model":"Redmi Note 8","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":16473,"linkUpstreamBandwidthKbps":44,"networkCapabilities":"NET_CAPABILITY_IMS,NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-2147483648,"transportTypes":"TRANSPORT_CELLULAR"},"detailedState":"CONNECTED","extraInfo":"ims","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":13,"subtypeName":"LTE","type":0,"typeName":"MOBILE"},{"capabilities":{"SSID":null,"linkDownBandwidthKbps":16473,"linkUpstreamBandwidthKbps":44,"networkCapabilities":"NET_CAPABILITY_...
+2020-10-21 21:38:17:356 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell dumpsys window'
+2020-10-21 21:38:17:591 [AndroidDriver] Screen already unlocked, doing nothing
+2020-10-21 21:38:17:593 [UiAutomator2] Starting 'flipboard.app/flipboard.activities.LaunchActivityAlias and waiting for 'flipboard.app/flipboard.activities.LaunchActivityAlias'
+2020-10-21 21:38:17:595 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell am start -W -n flipboard.app/flipboard.activities.LaunchActivityAlias -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2020-10-21 21:38:19:706 [WD Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/appium/device/pixel_ratio] with no body
+2020-10-21 21:38:19:727 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":2.75}
+2020-10-21 21:38:19:730 [WD Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2020-10-21 21:38:19:730 [WD Proxy] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/appium/device/system_bars] with no body
+2020-10-21 21:38:19:748 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":{"statusBar":80}}
+2020-10-21 21:38:19:749 [WD Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2020-10-21 21:38:19:749 [WD Proxy] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/window/current/size] with no body
+2020-10-21 21:38:19:767 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":{"height":2130,"width":1080}}
+2020-10-21 21:38:19:768 [Appium] New AndroidUiautomator2Driver session created successfully, session af268646-f87d-49bc-a20c-fa0164c7c024 added to master session list
+2020-10-21 21:38:19:769 [BaseDriver] Event 'newSessionStarted' logged at 1603296499769 (21:38:19 GMT+0530 (India Standard Time))
+2020-10-21 21:38:19:771 [W3C (af268646)] Cached the protocol value 'W3C' for the new session af268646-f87d-49bc-a20c-fa0164c7c024
+2020-10-21 21:38:19:772 [W3C (af268646)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","appActivity":"flipboard.activities.LaunchActivityAlias","appPackage":"flipboard.app","deviceName":"android","platformVersion":"9 PKQ1.190616.001"},"platformName":"android","appActivity":"flipboard.activities.LaunchActivityAlias","appPackage":"flipboard.app","deviceName":"17617090","platformVersion":"9","deviceUDID":"17617090","deviceApiLevel":28,"deviceScreenSize":"1080x2340","deviceScreenDensity":440,"deviceModel":"Redmi Note 8","deviceManufacturer":"Xiaomi","pixelRatio":2.75,"statBarHeight":80,"viewportRect":{"left":0,"top":80,"width":1080,"height":2050}}}
+2020-10-21 21:38:19:775 [HTTP] <-- POST /wd/hub/session 200 13660 ms - 873
+2020-10-21 21:38:19:775 [HTTP] 
+2020-10-21 21:38:19:794 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context
+2020-10-21 21:38:19:794 [HTTP] {}
+2020-10-21 21:38:19:806 [W3C (af268646)] Calling AppiumDriver.getCurrentContext() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:19:808 [W3C (af268646)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2020-10-21 21:38:19:810 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context 200 15 ms - 22
+2020-10-21 21:38:19:810 [HTTP] 
+2020-10-21 21:38:19:823 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element
+2020-10-21 21:38:19:824 [HTTP] {"using":"id","value":"flipboard.app:id/first_launch_cover_continue"}
+2020-10-21 21:38:19:826 [W3C (af268646)] Calling AppiumDriver.findElement() with args: ["id","flipboard.app:id/first_launch_cover_continue","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:19:827 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-10-21 21:38:19:828 [BaseDriver] Waiting up to 0 ms for condition
+2020-10-21 21:38:19:829 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-10-21 21:38:19:829 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element] with body: {"strategy":"id","selector":"flipboard.app:id/first_launch_cover_continue","context":"","multiple":false}
+2020-10-21 21:38:20:021 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":{"ELEMENT":"2360871a-7882-42e6-beef-41483a43bca9","element-6066-11e4-a52e-4f735466cecf":"2360871a-7882-42e6-beef-41483a43bca9"}}
+2020-10-21 21:38:20:023 [W3C (af268646)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"2360871a-7882-42e6-beef-41483a43bca9","ELEMENT":"2360871a-7882-42e6-beef-41483a43bca9"}
+2020-10-21 21:38:20:025 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element 200 201 ms - 137
+2020-10-21 21:38:20:025 [HTTP] 
+2020-10-21 21:38:20:032 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/2360871a-7882-42e6-beef-41483a43bca9/click
+2020-10-21 21:38:20:032 [HTTP] {"id":"2360871a-7882-42e6-beef-41483a43bca9"}
+2020-10-21 21:38:20:033 [W3C (af268646)] Calling AppiumDriver.click() with args: ["2360871a-7882-42e6-beef-41483a43bca9","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:20:034 [WD Proxy] Matched '/element/2360871a-7882-42e6-beef-41483a43bca9/click' to command name 'click'
+2020-10-21 21:38:20:034 [WD Proxy] Proxying [POST /element/2360871a-7882-42e6-beef-41483a43bca9/click] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element/2360871a-7882-42e6-beef-41483a43bca9/click] with body: {"element":"2360871a-7882-42e6-beef-41483a43bca9"}
+2020-10-21 21:38:20:068 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":null}
+2020-10-21 21:38:20:069 [W3C (af268646)] Responding to client with driver.click() result: null
+2020-10-21 21:38:20:071 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/2360871a-7882-42e6-beef-41483a43bca9/click 200 38 ms - 14
+2020-10-21 21:38:20:072 [HTTP] 
+2020-10-21 21:38:20:076 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context
+2020-10-21 21:38:20:077 [HTTP] {}
+2020-10-21 21:38:20:077 [W3C (af268646)] Calling AppiumDriver.getCurrentContext() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:20:078 [W3C (af268646)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2020-10-21 21:38:20:079 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context 200 2 ms - 22
+2020-10-21 21:38:20:080 [HTTP] 
+2020-10-21 21:38:20:090 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements
+2020-10-21 21:38:20:091 [HTTP] {"using":"id","value":"flipboard.app:id/topic_picker_topic_row_topic_tag"}
+2020-10-21 21:38:20:092 [W3C (af268646)] Calling AppiumDriver.findElements() with args: ["id","flipboard.app:id/topic_picker_topic_row_topic_tag","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:20:093 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-10-21 21:38:20:093 [BaseDriver] Waiting up to 0 ms for condition
+2020-10-21 21:38:20:094 [WD Proxy] Matched '/elements' to command name 'findElements'
+2020-10-21 21:38:20:095 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/elements] with body: {"strategy":"id","selector":"flipboard.app:id/topic_picker_topic_row_topic_tag","context":"","multiple":true}
+2020-10-21 21:38:20:256 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":[]}
+2020-10-21 21:38:20:258 [W3C (af268646)] Responding to client with driver.findElements() result: []
+2020-10-21 21:38:20:260 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements 200 170 ms - 12
+2020-10-21 21:38:20:260 [HTTP] 
+2020-10-21 21:38:20:763 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context
+2020-10-21 21:38:20:763 [HTTP] {}
+2020-10-21 21:38:20:764 [W3C (af268646)] Calling AppiumDriver.getCurrentContext() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:20:764 [W3C (af268646)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2020-10-21 21:38:20:765 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context 200 2 ms - 22
+2020-10-21 21:38:20:766 [HTTP] 
+2020-10-21 21:38:20:771 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements
+2020-10-21 21:38:20:771 [HTTP] {"using":"id","value":"flipboard.app:id/topic_picker_topic_row_topic_tag"}
+2020-10-21 21:38:20:773 [W3C (af268646)] Calling AppiumDriver.findElements() with args: ["id","flipboard.app:id/topic_picker_topic_row_topic_tag","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:20:774 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-10-21 21:38:20:774 [BaseDriver] Waiting up to 0 ms for condition
+2020-10-21 21:38:20:775 [WD Proxy] Matched '/elements' to command name 'findElements'
+2020-10-21 21:38:20:775 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/elements] with body: {"strategy":"id","selector":"flipboard.app:id/topic_picker_topic_row_topic_tag","context":"","multiple":true}
+2020-10-21 21:38:21:268 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":[{"ELEMENT":"276aba24-7e7d-4ede-8fb1-ae7fe64ecbf4","element-6066-11e4-a52e-4f735466cecf":"276aba24-7e7d-4ede-8fb1-ae7fe64ecbf4"},{"ELEMENT":"51e00757-5b5b-4513-afc6-0578f35840bb","element-6066-11e4-a52e-4f735466cecf":"51e00757-5b5b-4513-afc6-0578f35840bb"},{"ELEMENT":"85928137-1958-4482-a1e3-6506899c3b68","element-6066-11e4-a52e-4f735466cecf":"85928137-1958-4482-a1e3-6506899c3b68"},{"ELEMENT":"89b455ee-0cc8-4e8d-8d9b-f09622f1268e","element-6066-11e4-a52e-4f735466cecf":"89b455ee-0cc8-4e8d-8d9b-f09622f1268e"},{"ELEMENT":"3bd09f23-1d1e-4b19-9757-8ac9ca413457","element-6066-11e4-a52e-4f735466cecf":"3bd09f23-1d1e-4b19-9757-8ac9ca413457"},{"ELEMENT":"49848947-52c4-41a4-8c72-44fde46df316","element-6066-11e4-a52e-4f735466cecf":"49848947-52c4-41a4-8c72-44fde46df316"},{"ELEMENT":"46e23a49-9035-4a68-b640-ea23b8753170","element-6066-11e4-a52e-4f735466cecf":"46e23a49-9035-4a68-b640-ea23b8753170"},{"ELEMENT":"0055b367-82f1-4fd1-a02d-1c815700d5d9","element-6066-...
+2020-10-21 21:38:21:269 [W3C (af268646)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"276aba24-7e7d-4ede-8fb1-ae7fe64ecbf4","ELEMENT":"276aba24-7e7d-4ede-8fb1-ae7fe64ecbf4"},{"element-6066-11e4-a52e-4f735466cecf":"51e00757-5b5b-4513-afc6-0578f35840bb","ELEMENT":"51e00757-5b5b-4513-afc6-0578f35840bb"},{"element-6066-11e4-a52e-4f735466cecf":"85928137-1958-4482-a1e3-6506899c3b68","ELEMENT":"85928137-1958-4482-a1e3-6506899c3b68"},{"element-6066-11e4-a52e-4f735466cecf":"89b455ee-0cc8-4e8d-8d9b-f09622f1268e","ELEMENT":"89b455ee-0cc8-4e8d-8d9b-f09622f1268e"},{"element-6066-11e4-a52e-4f735466cecf":"3bd09f23-1d1e-4b19-9757-8ac9ca413457","ELEMENT":"3bd09f23-1d1e-4b19-9757-8ac9ca413457"},{"element-6066-11e4-a52e-4f735466cecf":"49848947-52c4-41a4-8c72-44fde46df316","ELEMENT":"49848947-52c4-41a4-8c72-44fde46df316"},{"element-6066-11e4-a52e-4f735466cecf":"46e23a49-9035-4a68-b640-ea23b8753170","ELEMENT":"46e23a49-9035-4a68-b640-ea23b8753170"},{"element-6066-11e4-a52e-4f735466cecf":"0055b367-82f1-4fd1-a02d-1c815700d5d9","ELEMENT":"0055b367-82f1-4fd1-a02d-1c815700d5d...
+2020-10-21 21:38:21:271 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements 200 499 ms - 2443
+2020-10-21 21:38:21:272 [HTTP] 
+2020-10-21 21:38:21:289 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/276aba24-7e7d-4ede-8fb1-ae7fe64ecbf4/click
+2020-10-21 21:38:21:290 [HTTP] {"id":"276aba24-7e7d-4ede-8fb1-ae7fe64ecbf4"}
+2020-10-21 21:38:21:292 [W3C (af268646)] Calling AppiumDriver.click() with args: ["276aba24-7e7d-4ede-8fb1-ae7fe64ecbf4","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:21:294 [WD Proxy] Matched '/element/276aba24-7e7d-4ede-8fb1-ae7fe64ecbf4/click' to command name 'click'
+2020-10-21 21:38:21:294 [WD Proxy] Proxying [POST /element/276aba24-7e7d-4ede-8fb1-ae7fe64ecbf4/click] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element/276aba24-7e7d-4ede-8fb1-ae7fe64ecbf4/click] with body: {"element":"276aba24-7e7d-4ede-8fb1-ae7fe64ecbf4"}
+2020-10-21 21:38:21:342 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":null}
+2020-10-21 21:38:21:343 [W3C (af268646)] Responding to client with driver.click() result: null
+2020-10-21 21:38:21:345 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/276aba24-7e7d-4ede-8fb1-ae7fe64ecbf4/click 200 55 ms - 14
+2020-10-21 21:38:21:345 [HTTP] 
+2020-10-21 21:38:21:349 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context
+2020-10-21 21:38:21:349 [HTTP] {}
+2020-10-21 21:38:21:351 [W3C (af268646)] Calling AppiumDriver.getCurrentContext() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:21:352 [W3C (af268646)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2020-10-21 21:38:21:353 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context 200 4 ms - 22
+2020-10-21 21:38:21:354 [HTTP] 
+2020-10-21 21:38:21:361 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements
+2020-10-21 21:38:21:362 [HTTP] {"using":"id","value":"flipboard.app:id/topic_picker_topic_row_topic_tag"}
+2020-10-21 21:38:21:369 [W3C (af268646)] Calling AppiumDriver.findElements() with args: ["id","flipboard.app:id/topic_picker_topic_row_topic_tag","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:21:370 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-10-21 21:38:21:370 [BaseDriver] Waiting up to 0 ms for condition
+2020-10-21 21:38:21:372 [WD Proxy] Matched '/elements' to command name 'findElements'
+2020-10-21 21:38:21:373 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/elements] with body: {"strategy":"id","selector":"flipboard.app:id/topic_picker_topic_row_topic_tag","context":"","multiple":true}
+2020-10-21 21:38:21:962 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":[{"ELEMENT":"15ef4fcd-523f-4e50-849f-7c693936a16b","element-6066-11e4-a52e-4f735466cecf":"15ef4fcd-523f-4e50-849f-7c693936a16b"},{"ELEMENT":"58f35dd8-9a58-4453-8534-948925f730a9","element-6066-11e4-a52e-4f735466cecf":"58f35dd8-9a58-4453-8534-948925f730a9"},{"ELEMENT":"bb59782b-98ca-421e-9557-a3edf3b57ace","element-6066-11e4-a52e-4f735466cecf":"bb59782b-98ca-421e-9557-a3edf3b57ace"},{"ELEMENT":"4d128c37-1f40-4bf7-9efa-6cec225e5326","element-6066-11e4-a52e-4f735466cecf":"4d128c37-1f40-4bf7-9efa-6cec225e5326"},{"ELEMENT":"4c380875-8c0a-4875-9524-fe4b3eea72e1","element-6066-11e4-a52e-4f735466cecf":"4c380875-8c0a-4875-9524-fe4b3eea72e1"},{"ELEMENT":"3d5debbe-3f6f-436e-ab41-886d32c98c9c","element-6066-11e4-a52e-4f735466cecf":"3d5debbe-3f6f-436e-ab41-886d32c98c9c"},{"ELEMENT":"74e607d8-eae1-4f2c-b37e-37484abf0ba3","element-6066-11e4-a52e-4f735466cecf":"74e607d8-eae1-4f2c-b37e-37484abf0ba3"},{"ELEMENT":"7b08d101-2118-46fd-b45c-6b1fec3b5714","element-6066-...
+2020-10-21 21:38:21:963 [W3C (af268646)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"15ef4fcd-523f-4e50-849f-7c693936a16b","ELEMENT":"15ef4fcd-523f-4e50-849f-7c693936a16b"},{"element-6066-11e4-a52e-4f735466cecf":"58f35dd8-9a58-4453-8534-948925f730a9","ELEMENT":"58f35dd8-9a58-4453-8534-948925f730a9"},{"element-6066-11e4-a52e-4f735466cecf":"bb59782b-98ca-421e-9557-a3edf3b57ace","ELEMENT":"bb59782b-98ca-421e-9557-a3edf3b57ace"},{"element-6066-11e4-a52e-4f735466cecf":"4d128c37-1f40-4bf7-9efa-6cec225e5326","ELEMENT":"4d128c37-1f40-4bf7-9efa-6cec225e5326"},{"element-6066-11e4-a52e-4f735466cecf":"4c380875-8c0a-4875-9524-fe4b3eea72e1","ELEMENT":"4c380875-8c0a-4875-9524-fe4b3eea72e1"},{"element-6066-11e4-a52e-4f735466cecf":"3d5debbe-3f6f-436e-ab41-886d32c98c9c","ELEMENT":"3d5debbe-3f6f-436e-ab41-886d32c98c9c"},{"element-6066-11e4-a52e-4f735466cecf":"74e607d8-eae1-4f2c-b37e-37484abf0ba3","ELEMENT":"74e607d8-eae1-4f2c-b37e-37484abf0ba3"},{"element-6066-11e4-a52e-4f735466cecf":"7b08d101-2118-46fd-b45c-6b1fec3b5714","ELEMENT":"7b08d101-2118-46fd-b45c-6b1fec3b571...
+2020-10-21 21:38:21:964 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements 200 603 ms - 2443
+2020-10-21 21:38:21:965 [HTTP] 
+2020-10-21 21:38:21:970 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/15ef4fcd-523f-4e50-849f-7c693936a16b/text
+2020-10-21 21:38:21:970 [HTTP] {}
+2020-10-21 21:38:21:974 [W3C (af268646)] Driver proxy active, passing request on via HTTP proxy
+2020-10-21 21:38:21:976 [WD Proxy] Matched '/wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/15ef4fcd-523f-4e50-849f-7c693936a16b/text' to command name 'getText'
+2020-10-21 21:38:21:976 [WD Proxy] Proxying [GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/15ef4fcd-523f-4e50-849f-7c693936a16b/text] to [GET http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element/15ef4fcd-523f-4e50-849f-7c693936a16b/text] with no body
+2020-10-21 21:38:22:041 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":"#NEWS (INDIA)"}
+2020-10-21 21:38:22:042 [WD Proxy] Replacing sessionId 2c20dd34-c09c-4210-8bea-9214d550c3fa with af268646-f87d-49bc-a20c-fa0164c7c024
+2020-10-21 21:38:22:043 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/15ef4fcd-523f-4e50-849f-7c693936a16b/text 200 73 ms - 76
+2020-10-21 21:38:22:044 [HTTP] 
+2020-10-21 21:38:22:046 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context
+2020-10-21 21:38:22:046 [HTTP] {}
+2020-10-21 21:38:22:047 [W3C (af268646)] Calling AppiumDriver.getCurrentContext() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:22:048 [W3C (af268646)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2020-10-21 21:38:22:049 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context 200 2 ms - 22
+2020-10-21 21:38:22:049 [HTTP] 
+2020-10-21 21:38:22:060 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements
+2020-10-21 21:38:22:060 [HTTP] {"using":"id","value":"flipboard.app:id/topic_picker_topic_row_topic_tag"}
+2020-10-21 21:38:22:061 [W3C (af268646)] Calling AppiumDriver.findElements() with args: ["id","flipboard.app:id/topic_picker_topic_row_topic_tag","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:22:062 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-10-21 21:38:22:062 [BaseDriver] Waiting up to 0 ms for condition
+2020-10-21 21:38:22:063 [WD Proxy] Matched '/elements' to command name 'findElements'
+2020-10-21 21:38:22:063 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/elements] with body: {"strategy":"id","selector":"flipboard.app:id/topic_picker_topic_row_topic_tag","context":"","multiple":true}
+2020-10-21 21:38:22:186 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":[{"ELEMENT":"84f4f9c0-480d-45f6-b404-3fddac207ddf","element-6066-11e4-a52e-4f735466cecf":"84f4f9c0-480d-45f6-b404-3fddac207ddf"},{"ELEMENT":"f5d149e9-595c-45ea-896f-01eaa2bb9c13","element-6066-11e4-a52e-4f735466cecf":"f5d149e9-595c-45ea-896f-01eaa2bb9c13"},{"ELEMENT":"d69ed72d-34bf-472e-bf29-527f7bc84b53","element-6066-11e4-a52e-4f735466cecf":"d69ed72d-34bf-472e-bf29-527f7bc84b53"},{"ELEMENT":"5eb98f01-e716-4110-b4e1-e008a0bbd89b","element-6066-11e4-a52e-4f735466cecf":"5eb98f01-e716-4110-b4e1-e008a0bbd89b"},{"ELEMENT":"d916c295-da22-4889-9758-76f738e468cc","element-6066-11e4-a52e-4f735466cecf":"d916c295-da22-4889-9758-76f738e468cc"},{"ELEMENT":"e74ad542-c297-4054-97b5-c0f584b0768c","element-6066-11e4-a52e-4f735466cecf":"e74ad542-c297-4054-97b5-c0f584b0768c"},{"ELEMENT":"14689d48-7994-4bba-902e-ade431eff288","element-6066-11e4-a52e-4f735466cecf":"14689d48-7994-4bba-902e-ade431eff288"},{"ELEMENT":"4c0d8a4d-4aec-44d1-828c-aa0a67fadc07","element-6066-...
+2020-10-21 21:38:22:187 [W3C (af268646)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"84f4f9c0-480d-45f6-b404-3fddac207ddf","ELEMENT":"84f4f9c0-480d-45f6-b404-3fddac207ddf"},{"element-6066-11e4-a52e-4f735466cecf":"f5d149e9-595c-45ea-896f-01eaa2bb9c13","ELEMENT":"f5d149e9-595c-45ea-896f-01eaa2bb9c13"},{"element-6066-11e4-a52e-4f735466cecf":"d69ed72d-34bf-472e-bf29-527f7bc84b53","ELEMENT":"d69ed72d-34bf-472e-bf29-527f7bc84b53"},{"element-6066-11e4-a52e-4f735466cecf":"5eb98f01-e716-4110-b4e1-e008a0bbd89b","ELEMENT":"5eb98f01-e716-4110-b4e1-e008a0bbd89b"},{"element-6066-11e4-a52e-4f735466cecf":"d916c295-da22-4889-9758-76f738e468cc","ELEMENT":"d916c295-da22-4889-9758-76f738e468cc"},{"element-6066-11e4-a52e-4f735466cecf":"e74ad542-c297-4054-97b5-c0f584b0768c","ELEMENT":"e74ad542-c297-4054-97b5-c0f584b0768c"},{"element-6066-11e4-a52e-4f735466cecf":"14689d48-7994-4bba-902e-ade431eff288","ELEMENT":"14689d48-7994-4bba-902e-ade431eff288"},{"element-6066-11e4-a52e-4f735466cecf":"4c0d8a4d-4aec-44d1-828c-aa0a67fadc07","ELEMENT":"4c0d8a4d-4aec-44d1-828c-aa0a67fadc0...
+2020-10-21 21:38:22:189 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements 200 128 ms - 2443
+2020-10-21 21:38:22:190 [HTTP] 
+2020-10-21 21:38:22:203 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/f5d149e9-595c-45ea-896f-01eaa2bb9c13/click
+2020-10-21 21:38:22:203 [HTTP] {"id":"f5d149e9-595c-45ea-896f-01eaa2bb9c13"}
+2020-10-21 21:38:22:205 [W3C (af268646)] Calling AppiumDriver.click() with args: ["f5d149e9-595c-45ea-896f-01eaa2bb9c13","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:22:206 [WD Proxy] Matched '/element/f5d149e9-595c-45ea-896f-01eaa2bb9c13/click' to command name 'click'
+2020-10-21 21:38:22:207 [WD Proxy] Proxying [POST /element/f5d149e9-595c-45ea-896f-01eaa2bb9c13/click] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element/f5d149e9-595c-45ea-896f-01eaa2bb9c13/click] with body: {"element":"f5d149e9-595c-45ea-896f-01eaa2bb9c13"}
+2020-10-21 21:38:22:279 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":null}
+2020-10-21 21:38:22:280 [W3C (af268646)] Responding to client with driver.click() result: null
+2020-10-21 21:38:22:281 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/f5d149e9-595c-45ea-896f-01eaa2bb9c13/click 200 78 ms - 14
+2020-10-21 21:38:22:281 [HTTP] 
+2020-10-21 21:38:22:283 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context
+2020-10-21 21:38:22:284 [HTTP] {}
+2020-10-21 21:38:22:284 [W3C (af268646)] Calling AppiumDriver.getCurrentContext() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:22:285 [W3C (af268646)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2020-10-21 21:38:22:286 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context 200 2 ms - 22
+2020-10-21 21:38:22:287 [HTTP] 
+2020-10-21 21:38:22:293 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements
+2020-10-21 21:38:22:293 [HTTP] {"using":"id","value":"flipboard.app:id/topic_picker_topic_row_topic_tag"}
+2020-10-21 21:38:22:294 [W3C (af268646)] Calling AppiumDriver.findElements() with args: ["id","flipboard.app:id/topic_picker_topic_row_topic_tag","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:22:294 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-10-21 21:38:22:295 [BaseDriver] Waiting up to 0 ms for condition
+2020-10-21 21:38:22:296 [WD Proxy] Matched '/elements' to command name 'findElements'
+2020-10-21 21:38:22:296 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/elements] with body: {"strategy":"id","selector":"flipboard.app:id/topic_picker_topic_row_topic_tag","context":"","multiple":true}
+2020-10-21 21:38:22:851 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":[{"ELEMENT":"2865f182-15b3-4c9a-a276-5c3608d4dc79","element-6066-11e4-a52e-4f735466cecf":"2865f182-15b3-4c9a-a276-5c3608d4dc79"},{"ELEMENT":"ed03fc18-2d47-46c7-a4b0-6eae68b4ae93","element-6066-11e4-a52e-4f735466cecf":"ed03fc18-2d47-46c7-a4b0-6eae68b4ae93"},{"ELEMENT":"7889a12c-e2d3-4ee1-8afa-a62165ed2a08","element-6066-11e4-a52e-4f735466cecf":"7889a12c-e2d3-4ee1-8afa-a62165ed2a08"},{"ELEMENT":"22f645c3-4b9d-4842-8b5a-98d527df9add","element-6066-11e4-a52e-4f735466cecf":"22f645c3-4b9d-4842-8b5a-98d527df9add"},{"ELEMENT":"25ff2765-46c2-43c8-8ce4-b82bf45d45ee","element-6066-11e4-a52e-4f735466cecf":"25ff2765-46c2-43c8-8ce4-b82bf45d45ee"},{"ELEMENT":"6b3acde1-8b11-4f98-b1f8-8ef3aeb3abb0","element-6066-11e4-a52e-4f735466cecf":"6b3acde1-8b11-4f98-b1f8-8ef3aeb3abb0"},{"ELEMENT":"ceb7fd0e-f85a-464b-8ec0-c35c86b59b11","element-6066-11e4-a52e-4f735466cecf":"ceb7fd0e-f85a-464b-8ec0-c35c86b59b11"},{"ELEMENT":"b34ed9c8-514d-44ff-91fd-c24ff713ff3f","element-6066-...
+2020-10-21 21:38:22:852 [W3C (af268646)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"2865f182-15b3-4c9a-a276-5c3608d4dc79","ELEMENT":"2865f182-15b3-4c9a-a276-5c3608d4dc79"},{"element-6066-11e4-a52e-4f735466cecf":"ed03fc18-2d47-46c7-a4b0-6eae68b4ae93","ELEMENT":"ed03fc18-2d47-46c7-a4b0-6eae68b4ae93"},{"element-6066-11e4-a52e-4f735466cecf":"7889a12c-e2d3-4ee1-8afa-a62165ed2a08","ELEMENT":"7889a12c-e2d3-4ee1-8afa-a62165ed2a08"},{"element-6066-11e4-a52e-4f735466cecf":"22f645c3-4b9d-4842-8b5a-98d527df9add","ELEMENT":"22f645c3-4b9d-4842-8b5a-98d527df9add"},{"element-6066-11e4-a52e-4f735466cecf":"25ff2765-46c2-43c8-8ce4-b82bf45d45ee","ELEMENT":"25ff2765-46c2-43c8-8ce4-b82bf45d45ee"},{"element-6066-11e4-a52e-4f735466cecf":"6b3acde1-8b11-4f98-b1f8-8ef3aeb3abb0","ELEMENT":"6b3acde1-8b11-4f98-b1f8-8ef3aeb3abb0"},{"element-6066-11e4-a52e-4f735466cecf":"ceb7fd0e-f85a-464b-8ec0-c35c86b59b11","ELEMENT":"ceb7fd0e-f85a-464b-8ec0-c35c86b59b11"},{"element-6066-11e4-a52e-4f735466cecf":"b34ed9c8-514d-44ff-91fd-c24ff713ff3f","ELEMENT":"b34ed9c8-514d-44ff-91fd-c24ff713ff3...
+2020-10-21 21:38:22:853 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements 200 560 ms - 2443
+2020-10-21 21:38:22:854 [HTTP] 
+2020-10-21 21:38:22:861 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/ed03fc18-2d47-46c7-a4b0-6eae68b4ae93/text
+2020-10-21 21:38:22:862 [HTTP] {}
+2020-10-21 21:38:22:863 [W3C (af268646)] Driver proxy active, passing request on via HTTP proxy
+2020-10-21 21:38:22:864 [WD Proxy] Matched '/wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/ed03fc18-2d47-46c7-a4b0-6eae68b4ae93/text' to command name 'getText'
+2020-10-21 21:38:22:864 [WD Proxy] Proxying [GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/ed03fc18-2d47-46c7-a4b0-6eae68b4ae93/text] to [GET http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element/ed03fc18-2d47-46c7-a4b0-6eae68b4ae93/text] with no body
+2020-10-21 21:38:22:899 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":"#TECHNOLOGY (INDIA)"}
+2020-10-21 21:38:22:899 [WD Proxy] Replacing sessionId 2c20dd34-c09c-4210-8bea-9214d550c3fa with af268646-f87d-49bc-a20c-fa0164c7c024
+2020-10-21 21:38:22:900 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/ed03fc18-2d47-46c7-a4b0-6eae68b4ae93/text 200 39 ms - 82
+2020-10-21 21:38:22:901 [HTTP] 
+2020-10-21 21:38:22:903 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context
+2020-10-21 21:38:22:904 [HTTP] {}
+2020-10-21 21:38:22:906 [W3C (af268646)] Calling AppiumDriver.getCurrentContext() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:22:908 [W3C (af268646)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2020-10-21 21:38:22:910 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context 200 6 ms - 22
+2020-10-21 21:38:22:910 [HTTP] 
+2020-10-21 21:38:22:916 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements
+2020-10-21 21:38:22:916 [HTTP] {"using":"id","value":"flipboard.app:id/topic_picker_topic_row_topic_tag"}
+2020-10-21 21:38:22:917 [W3C (af268646)] Calling AppiumDriver.findElements() with args: ["id","flipboard.app:id/topic_picker_topic_row_topic_tag","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:22:918 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-10-21 21:38:22:918 [BaseDriver] Waiting up to 0 ms for condition
+2020-10-21 21:38:22:919 [WD Proxy] Matched '/elements' to command name 'findElements'
+2020-10-21 21:38:22:919 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/elements] with body: {"strategy":"id","selector":"flipboard.app:id/topic_picker_topic_row_topic_tag","context":"","multiple":true}
+2020-10-21 21:38:23:041 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":[{"ELEMENT":"dc150e43-7984-45d0-8741-20d3c8ac4aa8","element-6066-11e4-a52e-4f735466cecf":"dc150e43-7984-45d0-8741-20d3c8ac4aa8"},{"ELEMENT":"8439442d-ef53-442c-94b3-53676c523e39","element-6066-11e4-a52e-4f735466cecf":"8439442d-ef53-442c-94b3-53676c523e39"},{"ELEMENT":"1c83414f-6a85-4884-99c5-7d4fd512cd9d","element-6066-11e4-a52e-4f735466cecf":"1c83414f-6a85-4884-99c5-7d4fd512cd9d"},{"ELEMENT":"ac3f553d-53e1-4dda-8698-f9a63cf47649","element-6066-11e4-a52e-4f735466cecf":"ac3f553d-53e1-4dda-8698-f9a63cf47649"},{"ELEMENT":"db44a68d-0944-4c07-ba13-caf8cfbf68ea","element-6066-11e4-a52e-4f735466cecf":"db44a68d-0944-4c07-ba13-caf8cfbf68ea"},{"ELEMENT":"f1be22d2-b9b7-4340-a6be-547a2f125f95","element-6066-11e4-a52e-4f735466cecf":"f1be22d2-b9b7-4340-a6be-547a2f125f95"},{"ELEMENT":"65463682-893f-487e-a93f-87ba688c6c0f","element-6066-11e4-a52e-4f735466cecf":"65463682-893f-487e-a93f-87ba688c6c0f"},{"ELEMENT":"0f0d1365-7157-4723-b322-18086a69a7c2","element-6066-...
+2020-10-21 21:38:23:042 [W3C (af268646)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"dc150e43-7984-45d0-8741-20d3c8ac4aa8","ELEMENT":"dc150e43-7984-45d0-8741-20d3c8ac4aa8"},{"element-6066-11e4-a52e-4f735466cecf":"8439442d-ef53-442c-94b3-53676c523e39","ELEMENT":"8439442d-ef53-442c-94b3-53676c523e39"},{"element-6066-11e4-a52e-4f735466cecf":"1c83414f-6a85-4884-99c5-7d4fd512cd9d","ELEMENT":"1c83414f-6a85-4884-99c5-7d4fd512cd9d"},{"element-6066-11e4-a52e-4f735466cecf":"ac3f553d-53e1-4dda-8698-f9a63cf47649","ELEMENT":"ac3f553d-53e1-4dda-8698-f9a63cf47649"},{"element-6066-11e4-a52e-4f735466cecf":"db44a68d-0944-4c07-ba13-caf8cfbf68ea","ELEMENT":"db44a68d-0944-4c07-ba13-caf8cfbf68ea"},{"element-6066-11e4-a52e-4f735466cecf":"f1be22d2-b9b7-4340-a6be-547a2f125f95","ELEMENT":"f1be22d2-b9b7-4340-a6be-547a2f125f95"},{"element-6066-11e4-a52e-4f735466cecf":"65463682-893f-487e-a93f-87ba688c6c0f","ELEMENT":"65463682-893f-487e-a93f-87ba688c6c0f"},{"element-6066-11e4-a52e-4f735466cecf":"0f0d1365-7157-4723-b322-18086a69a7c2","ELEMENT":"0f0d1365-7157-4723-b322-18086a69a7c...
+2020-10-21 21:38:23:050 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements 200 127 ms - 2443
+2020-10-21 21:38:23:050 [HTTP] 
+2020-10-21 21:38:23:060 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/1c83414f-6a85-4884-99c5-7d4fd512cd9d/click
+2020-10-21 21:38:23:060 [HTTP] {"id":"1c83414f-6a85-4884-99c5-7d4fd512cd9d"}
+2020-10-21 21:38:23:061 [W3C (af268646)] Calling AppiumDriver.click() with args: ["1c83414f-6a85-4884-99c5-7d4fd512cd9d","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:23:062 [WD Proxy] Matched '/element/1c83414f-6a85-4884-99c5-7d4fd512cd9d/click' to command name 'click'
+2020-10-21 21:38:23:063 [WD Proxy] Proxying [POST /element/1c83414f-6a85-4884-99c5-7d4fd512cd9d/click] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element/1c83414f-6a85-4884-99c5-7d4fd512cd9d/click] with body: {"element":"1c83414f-6a85-4884-99c5-7d4fd512cd9d"}
+2020-10-21 21:38:23:131 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":null}
+2020-10-21 21:38:23:132 [W3C (af268646)] Responding to client with driver.click() result: null
+2020-10-21 21:38:23:133 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/1c83414f-6a85-4884-99c5-7d4fd512cd9d/click 200 73 ms - 14
+2020-10-21 21:38:23:133 [HTTP] 
+2020-10-21 21:38:23:135 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context
+2020-10-21 21:38:23:135 [HTTP] {}
+2020-10-21 21:38:23:136 [W3C (af268646)] Calling AppiumDriver.getCurrentContext() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:23:137 [W3C (af268646)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2020-10-21 21:38:23:140 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context 200 3 ms - 22
+2020-10-21 21:38:23:141 [HTTP] 
+2020-10-21 21:38:23:147 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements
+2020-10-21 21:38:23:148 [HTTP] {"using":"id","value":"flipboard.app:id/topic_picker_topic_row_topic_tag"}
+2020-10-21 21:38:23:149 [W3C (af268646)] Calling AppiumDriver.findElements() with args: ["id","flipboard.app:id/topic_picker_topic_row_topic_tag","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:23:149 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-10-21 21:38:23:149 [BaseDriver] Waiting up to 0 ms for condition
+2020-10-21 21:38:23:150 [WD Proxy] Matched '/elements' to command name 'findElements'
+2020-10-21 21:38:23:151 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/elements] with body: {"strategy":"id","selector":"flipboard.app:id/topic_picker_topic_row_topic_tag","context":"","multiple":true}
+2020-10-21 21:38:23:829 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":[{"ELEMENT":"008279b8-86f0-4df4-974a-6eb8b72a484b","element-6066-11e4-a52e-4f735466cecf":"008279b8-86f0-4df4-974a-6eb8b72a484b"},{"ELEMENT":"41e9d433-1796-4d83-add4-317797d82271","element-6066-11e4-a52e-4f735466cecf":"41e9d433-1796-4d83-add4-317797d82271"},{"ELEMENT":"b6f02467-2ff3-40d0-a378-a602afc47db1","element-6066-11e4-a52e-4f735466cecf":"b6f02467-2ff3-40d0-a378-a602afc47db1"},{"ELEMENT":"6f79127e-909f-46e7-835f-b721b1b1757f","element-6066-11e4-a52e-4f735466cecf":"6f79127e-909f-46e7-835f-b721b1b1757f"},{"ELEMENT":"a333232e-7464-441f-9a34-afd8f0697e77","element-6066-11e4-a52e-4f735466cecf":"a333232e-7464-441f-9a34-afd8f0697e77"},{"ELEMENT":"a3837bcb-05d3-4bff-b123-3a9bef3d5ff1","element-6066-11e4-a52e-4f735466cecf":"a3837bcb-05d3-4bff-b123-3a9bef3d5ff1"},{"ELEMENT":"6853d2a6-b484-4dce-b81d-3eacf6406e18","element-6066-11e4-a52e-4f735466cecf":"6853d2a6-b484-4dce-b81d-3eacf6406e18"},{"ELEMENT":"2689a6b8-bb5c-420a-b0e0-ec67abc3505b","element-6066-...
+2020-10-21 21:38:23:829 [W3C (af268646)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"008279b8-86f0-4df4-974a-6eb8b72a484b","ELEMENT":"008279b8-86f0-4df4-974a-6eb8b72a484b"},{"element-6066-11e4-a52e-4f735466cecf":"41e9d433-1796-4d83-add4-317797d82271","ELEMENT":"41e9d433-1796-4d83-add4-317797d82271"},{"element-6066-11e4-a52e-4f735466cecf":"b6f02467-2ff3-40d0-a378-a602afc47db1","ELEMENT":"b6f02467-2ff3-40d0-a378-a602afc47db1"},{"element-6066-11e4-a52e-4f735466cecf":"6f79127e-909f-46e7-835f-b721b1b1757f","ELEMENT":"6f79127e-909f-46e7-835f-b721b1b1757f"},{"element-6066-11e4-a52e-4f735466cecf":"a333232e-7464-441f-9a34-afd8f0697e77","ELEMENT":"a333232e-7464-441f-9a34-afd8f0697e77"},{"element-6066-11e4-a52e-4f735466cecf":"a3837bcb-05d3-4bff-b123-3a9bef3d5ff1","ELEMENT":"a3837bcb-05d3-4bff-b123-3a9bef3d5ff1"},{"element-6066-11e4-a52e-4f735466cecf":"6853d2a6-b484-4dce-b81d-3eacf6406e18","ELEMENT":"6853d2a6-b484-4dce-b81d-3eacf6406e18"},{"element-6066-11e4-a52e-4f735466cecf":"2689a6b8-bb5c-420a-b0e0-ec67abc3505b","ELEMENT":"2689a6b8-bb5c-420a-b0e0-ec67abc3505...
+2020-10-21 21:38:23:830 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements 200 683 ms - 2443
+2020-10-21 21:38:23:831 [HTTP] 
+2020-10-21 21:38:23:835 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/b6f02467-2ff3-40d0-a378-a602afc47db1/text
+2020-10-21 21:38:23:835 [HTTP] {}
+2020-10-21 21:38:23:836 [W3C (af268646)] Driver proxy active, passing request on via HTTP proxy
+2020-10-21 21:38:23:837 [WD Proxy] Matched '/wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/b6f02467-2ff3-40d0-a378-a602afc47db1/text' to command name 'getText'
+2020-10-21 21:38:23:839 [WD Proxy] Proxying [GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/b6f02467-2ff3-40d0-a378-a602afc47db1/text] to [GET http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element/b6f02467-2ff3-40d0-a378-a602afc47db1/text] with no body
+2020-10-21 21:38:23:878 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":"#SPORTS (INDIA)"}
+2020-10-21 21:38:23:879 [WD Proxy] Replacing sessionId 2c20dd34-c09c-4210-8bea-9214d550c3fa with af268646-f87d-49bc-a20c-fa0164c7c024
+2020-10-21 21:38:23:880 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/b6f02467-2ff3-40d0-a378-a602afc47db1/text 200 44 ms - 78
+2020-10-21 21:38:23:880 [HTTP] 
+2020-10-21 21:38:23:883 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context
+2020-10-21 21:38:23:883 [HTTP] {}
+2020-10-21 21:38:23:884 [W3C (af268646)] Calling AppiumDriver.getCurrentContext() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:23:885 [W3C (af268646)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2020-10-21 21:38:23:886 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context 200 3 ms - 22
+2020-10-21 21:38:23:886 [HTTP] 
+2020-10-21 21:38:23:893 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements
+2020-10-21 21:38:23:894 [HTTP] {"using":"id","value":"flipboard.app:id/topic_picker_topic_row_topic_tag"}
+2020-10-21 21:38:23:895 [W3C (af268646)] Calling AppiumDriver.findElements() with args: ["id","flipboard.app:id/topic_picker_topic_row_topic_tag","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:23:895 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-10-21 21:38:23:896 [BaseDriver] Waiting up to 0 ms for condition
+2020-10-21 21:38:23:896 [WD Proxy] Matched '/elements' to command name 'findElements'
+2020-10-21 21:38:23:897 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/elements] with body: {"strategy":"id","selector":"flipboard.app:id/topic_picker_topic_row_topic_tag","context":"","multiple":true}
+2020-10-21 21:38:24:010 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":[{"ELEMENT":"053a2d85-5e9b-4c7f-bf81-92195c439ad3","element-6066-11e4-a52e-4f735466cecf":"053a2d85-5e9b-4c7f-bf81-92195c439ad3"},{"ELEMENT":"a3234aae-3af2-4d95-8a97-83e0d618fb09","element-6066-11e4-a52e-4f735466cecf":"a3234aae-3af2-4d95-8a97-83e0d618fb09"},{"ELEMENT":"4e40999a-f64a-47b8-bb21-d902c82f3556","element-6066-11e4-a52e-4f735466cecf":"4e40999a-f64a-47b8-bb21-d902c82f3556"},{"ELEMENT":"150fd947-c3e6-483e-b7ce-288b4d6fce91","element-6066-11e4-a52e-4f735466cecf":"150fd947-c3e6-483e-b7ce-288b4d6fce91"},{"ELEMENT":"a1af8ae7-a5ec-4f2f-bae5-5b46005d1d84","element-6066-11e4-a52e-4f735466cecf":"a1af8ae7-a5ec-4f2f-bae5-5b46005d1d84"},{"ELEMENT":"1769c6a3-d09c-4e1c-a721-5a280898bf0b","element-6066-11e4-a52e-4f735466cecf":"1769c6a3-d09c-4e1c-a721-5a280898bf0b"},{"ELEMENT":"ea39efa5-4154-4569-a2a2-8b338f342f58","element-6066-11e4-a52e-4f735466cecf":"ea39efa5-4154-4569-a2a2-8b338f342f58"},{"ELEMENT":"9360d245-cb9b-4728-b2be-da7fe21944ea","element-6066-...
+2020-10-21 21:38:24:011 [W3C (af268646)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"053a2d85-5e9b-4c7f-bf81-92195c439ad3","ELEMENT":"053a2d85-5e9b-4c7f-bf81-92195c439ad3"},{"element-6066-11e4-a52e-4f735466cecf":"a3234aae-3af2-4d95-8a97-83e0d618fb09","ELEMENT":"a3234aae-3af2-4d95-8a97-83e0d618fb09"},{"element-6066-11e4-a52e-4f735466cecf":"4e40999a-f64a-47b8-bb21-d902c82f3556","ELEMENT":"4e40999a-f64a-47b8-bb21-d902c82f3556"},{"element-6066-11e4-a52e-4f735466cecf":"150fd947-c3e6-483e-b7ce-288b4d6fce91","ELEMENT":"150fd947-c3e6-483e-b7ce-288b4d6fce91"},{"element-6066-11e4-a52e-4f735466cecf":"a1af8ae7-a5ec-4f2f-bae5-5b46005d1d84","ELEMENT":"a1af8ae7-a5ec-4f2f-bae5-5b46005d1d84"},{"element-6066-11e4-a52e-4f735466cecf":"1769c6a3-d09c-4e1c-a721-5a280898bf0b","ELEMENT":"1769c6a3-d09c-4e1c-a721-5a280898bf0b"},{"element-6066-11e4-a52e-4f735466cecf":"ea39efa5-4154-4569-a2a2-8b338f342f58","ELEMENT":"ea39efa5-4154-4569-a2a2-8b338f342f58"},{"element-6066-11e4-a52e-4f735466cecf":"9360d245-cb9b-4728-b2be-da7fe21944ea","ELEMENT":"9360d245-cb9b-4728-b2be-da7fe21944e...
+2020-10-21 21:38:24:012 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements 200 118 ms - 2443
+2020-10-21 21:38:24:012 [HTTP] 
+2020-10-21 21:38:24:021 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/150fd947-c3e6-483e-b7ce-288b4d6fce91/click
+2020-10-21 21:38:24:021 [HTTP] {"id":"150fd947-c3e6-483e-b7ce-288b4d6fce91"}
+2020-10-21 21:38:24:023 [W3C (af268646)] Calling AppiumDriver.click() with args: ["150fd947-c3e6-483e-b7ce-288b4d6fce91","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:24:025 [WD Proxy] Matched '/element/150fd947-c3e6-483e-b7ce-288b4d6fce91/click' to command name 'click'
+2020-10-21 21:38:24:026 [WD Proxy] Proxying [POST /element/150fd947-c3e6-483e-b7ce-288b4d6fce91/click] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element/150fd947-c3e6-483e-b7ce-288b4d6fce91/click] with body: {"element":"150fd947-c3e6-483e-b7ce-288b4d6fce91"}
+2020-10-21 21:38:24:080 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":null}
+2020-10-21 21:38:24:080 [W3C (af268646)] Responding to client with driver.click() result: null
+2020-10-21 21:38:24:081 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/150fd947-c3e6-483e-b7ce-288b4d6fce91/click 200 60 ms - 14
+2020-10-21 21:38:24:082 [HTTP] 
+2020-10-21 21:38:24:084 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context
+2020-10-21 21:38:24:084 [HTTP] {}
+2020-10-21 21:38:24:085 [W3C (af268646)] Calling AppiumDriver.getCurrentContext() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:24:086 [W3C (af268646)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2020-10-21 21:38:24:087 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context 200 3 ms - 22
+2020-10-21 21:38:24:088 [HTTP] 
+2020-10-21 21:38:24:100 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements
+2020-10-21 21:38:24:101 [HTTP] {"using":"id","value":"flipboard.app:id/topic_picker_topic_row_topic_tag"}
+2020-10-21 21:38:24:102 [W3C (af268646)] Calling AppiumDriver.findElements() with args: ["id","flipboard.app:id/topic_picker_topic_row_topic_tag","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:24:102 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-10-21 21:38:24:103 [BaseDriver] Waiting up to 0 ms for condition
+2020-10-21 21:38:24:104 [WD Proxy] Matched '/elements' to command name 'findElements'
+2020-10-21 21:38:24:105 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/elements] with body: {"strategy":"id","selector":"flipboard.app:id/topic_picker_topic_row_topic_tag","context":"","multiple":true}
+2020-10-21 21:38:24:648 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":[{"ELEMENT":"12271e72-98b1-46e8-a76a-434155e8e3d5","element-6066-11e4-a52e-4f735466cecf":"12271e72-98b1-46e8-a76a-434155e8e3d5"},{"ELEMENT":"a45a4b53-64b1-4eeb-aa6e-1fc96e844215","element-6066-11e4-a52e-4f735466cecf":"a45a4b53-64b1-4eeb-aa6e-1fc96e844215"},{"ELEMENT":"9bc87b3b-40e6-43b6-9fcb-c17ee9a1d39b","element-6066-11e4-a52e-4f735466cecf":"9bc87b3b-40e6-43b6-9fcb-c17ee9a1d39b"},{"ELEMENT":"2a5914e5-904f-46e5-97e1-817bba1c3ee2","element-6066-11e4-a52e-4f735466cecf":"2a5914e5-904f-46e5-97e1-817bba1c3ee2"},{"ELEMENT":"13cf184b-e8d8-4007-87dd-95e6a5d7a7f8","element-6066-11e4-a52e-4f735466cecf":"13cf184b-e8d8-4007-87dd-95e6a5d7a7f8"},{"ELEMENT":"7a909a1b-8890-4fd0-911a-2ff0e76da822","element-6066-11e4-a52e-4f735466cecf":"7a909a1b-8890-4fd0-911a-2ff0e76da822"},{"ELEMENT":"14b05817-93a1-49df-a590-2e59380dc25f","element-6066-11e4-a52e-4f735466cecf":"14b05817-93a1-49df-a590-2e59380dc25f"},{"ELEMENT":"e4d34d6b-a8a3-446d-975b-477d27383f88","element-6066-...
+2020-10-21 21:38:24:650 [W3C (af268646)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"12271e72-98b1-46e8-a76a-434155e8e3d5","ELEMENT":"12271e72-98b1-46e8-a76a-434155e8e3d5"},{"element-6066-11e4-a52e-4f735466cecf":"a45a4b53-64b1-4eeb-aa6e-1fc96e844215","ELEMENT":"a45a4b53-64b1-4eeb-aa6e-1fc96e844215"},{"element-6066-11e4-a52e-4f735466cecf":"9bc87b3b-40e6-43b6-9fcb-c17ee9a1d39b","ELEMENT":"9bc87b3b-40e6-43b6-9fcb-c17ee9a1d39b"},{"element-6066-11e4-a52e-4f735466cecf":"2a5914e5-904f-46e5-97e1-817bba1c3ee2","ELEMENT":"2a5914e5-904f-46e5-97e1-817bba1c3ee2"},{"element-6066-11e4-a52e-4f735466cecf":"13cf184b-e8d8-4007-87dd-95e6a5d7a7f8","ELEMENT":"13cf184b-e8d8-4007-87dd-95e6a5d7a7f8"},{"element-6066-11e4-a52e-4f735466cecf":"7a909a1b-8890-4fd0-911a-2ff0e76da822","ELEMENT":"7a909a1b-8890-4fd0-911a-2ff0e76da822"},{"element-6066-11e4-a52e-4f735466cecf":"14b05817-93a1-49df-a590-2e59380dc25f","ELEMENT":"14b05817-93a1-49df-a590-2e59380dc25f"},{"element-6066-11e4-a52e-4f735466cecf":"e4d34d6b-a8a3-446d-975b-477d27383f88","ELEMENT":"e4d34d6b-a8a3-446d-975b-477d27383f8...
+2020-10-21 21:38:24:651 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/elements 200 550 ms - 2443
+2020-10-21 21:38:24:652 [HTTP] 
+2020-10-21 21:38:24:661 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/2a5914e5-904f-46e5-97e1-817bba1c3ee2/text
+2020-10-21 21:38:24:661 [HTTP] {}
+2020-10-21 21:38:24:662 [W3C (af268646)] Driver proxy active, passing request on via HTTP proxy
+2020-10-21 21:38:24:664 [WD Proxy] Matched '/wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/2a5914e5-904f-46e5-97e1-817bba1c3ee2/text' to command name 'getText'
+2020-10-21 21:38:24:664 [WD Proxy] Proxying [GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/2a5914e5-904f-46e5-97e1-817bba1c3ee2/text] to [GET http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element/2a5914e5-904f-46e5-97e1-817bba1c3ee2/text] with no body
+2020-10-21 21:38:24:695 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":"#INDIAN POLITICS"}
+2020-10-21 21:38:24:695 [WD Proxy] Replacing sessionId 2c20dd34-c09c-4210-8bea-9214d550c3fa with af268646-f87d-49bc-a20c-fa0164c7c024
+2020-10-21 21:38:24:697 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/2a5914e5-904f-46e5-97e1-817bba1c3ee2/text 200 36 ms - 79
+2020-10-21 21:38:24:698 [HTTP] 
+2020-10-21 21:38:24:701 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context
+2020-10-21 21:38:24:702 [HTTP] {}
+2020-10-21 21:38:24:703 [W3C (af268646)] Calling AppiumDriver.getCurrentContext() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:24:705 [W3C (af268646)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2020-10-21 21:38:24:708 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context 200 5 ms - 22
+2020-10-21 21:38:24:709 [HTTP] 
+2020-10-21 21:38:24:719 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element
+2020-10-21 21:38:24:719 [HTTP] {"using":"id","value":"flipboard.app:id/topic_picker_continue_button"}
+2020-10-21 21:38:24:721 [W3C (af268646)] Calling AppiumDriver.findElement() with args: ["id","flipboard.app:id/topic_picker_continue_button","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:24:722 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-10-21 21:38:24:723 [BaseDriver] Waiting up to 0 ms for condition
+2020-10-21 21:38:24:724 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-10-21 21:38:24:725 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element] with body: {"strategy":"id","selector":"flipboard.app:id/topic_picker_continue_button","context":"","multiple":false}
+2020-10-21 21:38:24:794 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":{"ELEMENT":"27c9e708-62a9-4d44-b663-a7ce95288f49","element-6066-11e4-a52e-4f735466cecf":"27c9e708-62a9-4d44-b663-a7ce95288f49"}}
+2020-10-21 21:38:24:795 [W3C (af268646)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"27c9e708-62a9-4d44-b663-a7ce95288f49","ELEMENT":"27c9e708-62a9-4d44-b663-a7ce95288f49"}
+2020-10-21 21:38:24:797 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element 200 78 ms - 137
+2020-10-21 21:38:24:798 [HTTP] 
+2020-10-21 21:38:24:809 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/27c9e708-62a9-4d44-b663-a7ce95288f49/click
+2020-10-21 21:38:24:809 [HTTP] {"id":"27c9e708-62a9-4d44-b663-a7ce95288f49"}
+2020-10-21 21:38:24:811 [W3C (af268646)] Calling AppiumDriver.click() with args: ["27c9e708-62a9-4d44-b663-a7ce95288f49","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:24:813 [WD Proxy] Matched '/element/27c9e708-62a9-4d44-b663-a7ce95288f49/click' to command name 'click'
+2020-10-21 21:38:24:813 [WD Proxy] Proxying [POST /element/27c9e708-62a9-4d44-b663-a7ce95288f49/click] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element/27c9e708-62a9-4d44-b663-a7ce95288f49/click] with body: {"element":"27c9e708-62a9-4d44-b663-a7ce95288f49"}
+2020-10-21 21:38:24:866 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":null}
+2020-10-21 21:38:24:867 [W3C (af268646)] Responding to client with driver.click() result: null
+2020-10-21 21:38:24:868 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/27c9e708-62a9-4d44-b663-a7ce95288f49/click 200 59 ms - 14
+2020-10-21 21:38:24:868 [HTTP] 
+2020-10-21 21:38:24:872 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context
+2020-10-21 21:38:24:873 [HTTP] {}
+2020-10-21 21:38:24:875 [W3C (af268646)] Calling AppiumDriver.getCurrentContext() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:24:875 [W3C (af268646)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2020-10-21 21:38:24:877 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context 200 5 ms - 22
+2020-10-21 21:38:24:878 [HTTP] 
+2020-10-21 21:38:24:886 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element
+2020-10-21 21:38:24:887 [HTTP] {"using":"id","value":"flipboard.app:id/account_login_buttons_skip"}
+2020-10-21 21:38:24:888 [W3C (af268646)] Calling AppiumDriver.findElement() with args: ["id","flipboard.app:id/account_login_buttons_skip","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:24:889 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-10-21 21:38:24:890 [BaseDriver] Waiting up to 0 ms for condition
+2020-10-21 21:38:24:891 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-10-21 21:38:24:891 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element] with body: {"strategy":"id","selector":"flipboard.app:id/account_login_buttons_skip","context":"","multiple":false}
+2020-10-21 21:38:25:197 [WD Proxy] Got response with status 404: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:73)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:247)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2020-10-21 21:38:25:198 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2020-10-21 21:38:25:211 [W3C (af268646)] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+2020-10-21 21:38:25:212 [W3C (af268646)]     at AndroidUiautomator2Driver.findElOrEls (C:\Users\91967\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:75:11)
+2020-10-21 21:38:25:212 [W3C (af268646)]     at runMicrotasks (<anonymous>)
+2020-10-21 21:38:25:212 [W3C (af268646)]     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-10-21 21:38:25:214 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element 404 327 ms - 528
+2020-10-21 21:38:25:214 [HTTP] 
+2020-10-21 21:38:25:743 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element
+2020-10-21 21:38:25:743 [HTTP] {"using":"id","value":"flipboard.app:id/account_login_buttons_skip"}
+2020-10-21 21:38:25:744 [W3C (af268646)] Calling AppiumDriver.findElement() with args: ["id","flipboard.app:id/account_login_buttons_skip","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:25:744 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-10-21 21:38:25:745 [BaseDriver] Waiting up to 0 ms for condition
+2020-10-21 21:38:25:745 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-10-21 21:38:25:746 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element] with body: {"strategy":"id","selector":"flipboard.app:id/account_login_buttons_skip","context":"","multiple":false}
+2020-10-21 21:38:25:814 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":{"ELEMENT":"26f6bfdd-9b88-4297-88fe-84cd5ca805f2","element-6066-11e4-a52e-4f735466cecf":"26f6bfdd-9b88-4297-88fe-84cd5ca805f2"}}
+2020-10-21 21:38:25:815 [W3C (af268646)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"26f6bfdd-9b88-4297-88fe-84cd5ca805f2","ELEMENT":"26f6bfdd-9b88-4297-88fe-84cd5ca805f2"}
+2020-10-21 21:38:25:817 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element 200 73 ms - 137
+2020-10-21 21:38:25:818 [HTTP] 
+2020-10-21 21:38:25:827 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/26f6bfdd-9b88-4297-88fe-84cd5ca805f2/click
+2020-10-21 21:38:25:828 [HTTP] {"id":"26f6bfdd-9b88-4297-88fe-84cd5ca805f2"}
+2020-10-21 21:38:25:829 [W3C (af268646)] Calling AppiumDriver.click() with args: ["26f6bfdd-9b88-4297-88fe-84cd5ca805f2","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:25:831 [WD Proxy] Matched '/element/26f6bfdd-9b88-4297-88fe-84cd5ca805f2/click' to command name 'click'
+2020-10-21 21:38:25:832 [WD Proxy] Proxying [POST /element/26f6bfdd-9b88-4297-88fe-84cd5ca805f2/click] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element/26f6bfdd-9b88-4297-88fe-84cd5ca805f2/click] with body: {"element":"26f6bfdd-9b88-4297-88fe-84cd5ca805f2"}
+2020-10-21 21:38:27:737 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":null}
+2020-10-21 21:38:27:739 [W3C (af268646)] Responding to client with driver.click() result: null
+2020-10-21 21:38:27:743 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/26f6bfdd-9b88-4297-88fe-84cd5ca805f2/click 200 1913 ms - 14
+2020-10-21 21:38:27:745 [HTTP] 
+2020-10-21 21:38:30:751 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context
+2020-10-21 21:38:30:752 [HTTP] {}
+2020-10-21 21:38:30:754 [W3C (af268646)] Calling AppiumDriver.getCurrentContext() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:30:758 [W3C (af268646)] Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+2020-10-21 21:38:30:763 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/context 200 11 ms - 22
+2020-10-21 21:38:30:764 [HTTP] 
+2020-10-21 21:38:30:779 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element
+2020-10-21 21:38:30:780 [HTTP] {"using":"id","value":"flipboard.app:id/flipboard_tv_pitch_not_now_button"}
+2020-10-21 21:38:30:782 [W3C (af268646)] Calling AppiumDriver.findElement() with args: ["id","flipboard.app:id/flipboard_tv_pitch_not_now_button","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:30:784 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-10-21 21:38:30:785 [BaseDriver] Waiting up to 0 ms for condition
+2020-10-21 21:38:30:798 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-10-21 21:38:30:801 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element] with body: {"strategy":"id","selector":"flipboard.app:id/flipboard_tv_pitch_not_now_button","context":"","multiple":false}
+2020-10-21 21:38:30:880 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":{"ELEMENT":"65735d18-9b45-4bc2-9e1c-47c034005f66","element-6066-11e4-a52e-4f735466cecf":"65735d18-9b45-4bc2-9e1c-47c034005f66"}}
+2020-10-21 21:38:30:883 [W3C (af268646)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"65735d18-9b45-4bc2-9e1c-47c034005f66","ELEMENT":"65735d18-9b45-4bc2-9e1c-47c034005f66"}
+2020-10-21 21:38:30:886 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element 200 106 ms - 137
+2020-10-21 21:38:30:887 [HTTP] 
+2020-10-21 21:38:30:923 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/65735d18-9b45-4bc2-9e1c-47c034005f66/click
+2020-10-21 21:38:30:925 [HTTP] {"id":"65735d18-9b45-4bc2-9e1c-47c034005f66"}
+2020-10-21 21:38:30:937 [W3C (af268646)] Calling AppiumDriver.click() with args: ["65735d18-9b45-4bc2-9e1c-47c034005f66","af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:30:949 [WD Proxy] Matched '/element/65735d18-9b45-4bc2-9e1c-47c034005f66/click' to command name 'click'
+2020-10-21 21:38:30:951 [WD Proxy] Proxying [POST /element/65735d18-9b45-4bc2-9e1c-47c034005f66/click] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/element/65735d18-9b45-4bc2-9e1c-47c034005f66/click] with body: {"element":"65735d18-9b45-4bc2-9e1c-47c034005f66"}
+2020-10-21 21:38:31:051 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":null}
+2020-10-21 21:38:31:054 [W3C (af268646)] Responding to client with driver.click() result: null
+2020-10-21 21:38:31:058 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/element/65735d18-9b45-4bc2-9e1c-47c034005f66/click 200 133 ms - 14
+2020-10-21 21:38:31:059 [HTTP] 
+2020-10-21 21:38:34:129 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/appium/device/press_keycode
+2020-10-21 21:38:34:130 [HTTP] {"keycode":4}
+2020-10-21 21:38:34:138 [W3C (af268646)] Calling AppiumDriver.pressKeyCode() with args: [4,null,null,null,null,"af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:34:159 [WD Proxy] Matched '/appium/device/press_keycode' to command name 'pressKeyCode'
+2020-10-21 21:38:34:160 [WD Proxy] Proxying [POST /appium/device/press_keycode] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/appium/device/press_keycode] with body: {"keycode":4,"metastate":null,"flags":null}
+2020-10-21 21:38:34:255 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":null}
+2020-10-21 21:38:34:257 [W3C (af268646)] Responding to client with driver.pressKeyCode() result: null
+2020-10-21 21:38:34:264 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/appium/device/press_keycode 200 130 ms - 14
+2020-10-21 21:38:34:265 [HTTP] 
+2020-10-21 21:38:40:291 [HTTP] --> GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/window/rect
+2020-10-21 21:38:40:292 [HTTP] {}
+2020-10-21 21:38:40:310 [W3C (af268646)] Calling AppiumDriver.getWindowRect() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:40:315 [WD Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2020-10-21 21:38:40:316 [WD Proxy] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/window/current/size] with no body
+2020-10-21 21:38:40:366 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":{"height":2130,"width":1080}}
+2020-10-21 21:38:40:368 [W3C (af268646)] Responding to client with driver.getWindowRect() result: {"width":1080,"height":2130,"x":0,"y":0}
+2020-10-21 21:38:40:373 [HTTP] <-- GET /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/window/rect 200 80 ms - 50
+2020-10-21 21:38:40:374 [HTTP] 
+2020-10-21 21:38:40:407 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/touch/perform
+2020-10-21 21:38:40:408 [HTTP] {"actions":[{"action":"press","options":{"x":514,"y":1704}},{"action":"wait","options":{"ms":2000}},{"action":"moveTo","options":{"x":514,"y":447}},{"action":"release","options":{}}]}
+2020-10-21 21:38:40:412 [W3C (af268646)] Calling AppiumDriver.performTouch() with args: [[{"action":"press","options":{"x":514,"y":1704}},{"action":"wait","options":{"ms":2000}},{"action":"moveTo","options":{"x":514,"y":447}},{"action":"release","options":{}}],"af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:40:421 [WD Proxy] Matched '/touch/perform' to command name 'performTouch'
+2020-10-21 21:38:40:422 [WD Proxy] Proxying [POST /touch/perform] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/touch/perform] with body: {"startX":514,"startY":1704,"endX":514,"endY":447,"steps":56}
+2020-10-21 21:38:42:433 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":null}
+2020-10-21 21:38:42:435 [W3C (af268646)] Responding to client with driver.performTouch() result: null
+2020-10-21 21:38:42:438 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/touch/perform 200 2030 ms - 14
+2020-10-21 21:38:42:439 [HTTP] 
+2020-10-21 21:38:42:461 [HTTP] --> POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/touch/perform
+2020-10-21 21:38:42:462 [HTTP] {"actions":[{"action":"press","options":{"x":514,"y":1704}},{"action":"wait","options":{"ms":2000}},{"action":"moveTo","options":{"x":514,"y":447}},{"action":"release","options":{}}]}
+2020-10-21 21:38:42:465 [W3C (af268646)] Calling AppiumDriver.performTouch() with args: [[{"action":"press","options":{"x":514,"y":1704}},{"action":"wait","options":{"ms":2000}},{"action":"moveTo","options":{"x":514,"y":447}},{"action":"release","options":{}}],"af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:42:474 [WD Proxy] Matched '/touch/perform' to command name 'performTouch'
+2020-10-21 21:38:42:476 [WD Proxy] Proxying [POST /touch/perform] to [POST http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa/touch/perform] with body: {"startX":514,"startY":1704,"endX":514,"endY":447,"steps":56}
+2020-10-21 21:38:44:563 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":null}
+2020-10-21 21:38:44:565 [W3C (af268646)] Responding to client with driver.performTouch() result: null
+2020-10-21 21:38:44:568 [HTTP] <-- POST /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024/touch/perform 200 2105 ms - 14
+2020-10-21 21:38:44:569 [HTTP] 
+2020-10-21 21:38:47:589 [HTTP] --> DELETE /wd/hub/session/af268646-f87d-49bc-a20c-fa0164c7c024
+2020-10-21 21:38:47:590 [HTTP] {}
+2020-10-21 21:38:47:591 [W3C (af268646)] Calling AppiumDriver.deleteSession() with args: ["af268646-f87d-49bc-a20c-fa0164c7c024"]
+2020-10-21 21:38:47:592 [BaseDriver] Event 'quitSessionRequested' logged at 1603296527592 (21:38:47 GMT+0530 (India Standard Time))
+2020-10-21 21:38:47:594 [Appium] Removing session af268646-f87d-49bc-a20c-fa0164c7c024 from our master session list
+2020-10-21 21:38:47:596 [UiAutomator2] Deleting UiAutomator2 session
+2020-10-21 21:38:47:599 [UiAutomator2] Deleting UiAutomator2 server session
+2020-10-21 21:38:47:600 [WD Proxy] Matched '/' to command name 'deleteSession'
+2020-10-21 21:38:47:601 [WD Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8200/wd/hub/session/2c20dd34-c09c-4210-8bea-9214d550c3fa] with no body
+2020-10-21 21:38:47:641 [WD Proxy] Got response with status 200: {"sessionId":"2c20dd34-c09c-4210-8bea-9214d550c3fa","value":null}
+2020-10-21 21:38:47:642 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell am force-stop flipboard.app'
+2020-10-21 21:38:47:806 [Instrumentation] .
+2020-10-21 21:38:47:927 [Logcat] Stopping logcat capture
+2020-10-21 21:38:47:940 [ADB] Removing forwarded port socket connection: 8200 
+2020-10-21 21:38:47:941 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 forward --remove tcp\:8200'
+2020-10-21 21:38:48:044 [UiAutomator2] Restoring hidden api policy to the device default configuration
+2020-10-21 21:38:48:046 [ADB] Running 'C:\Users\91967\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 17617090 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2020-10-21 21:38:48:221 [Instrumentation] Time: 32.14
+2020-10-21 21:38:48:222 [Instrumentation] 
+2020-10-21 21:38:48:222 [Instrumentation] OK (1 test)
+2020-10-21 21:38:48:248 [BaseDriver] Event 'quitSessionFinished' logged at 1603296528248 (21:38:48 GMT+0530 (India Standard Time))
